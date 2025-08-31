@@ -1,0 +1,156 @@
+.header{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 40px;
+    background-color: #495057;
+    max-width: 500px; width: 90%;
+    height: 100px;
+    border-radius: 10px; 
+    margin: 20px auto;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.header:hover{
+   transform: scale(1.1);
+   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);   
+}
+
+body{
+    background: linear-gradient(to bottom, #343a40 90%, #111 10%);
+    min-height: 150vh;
+}
+
+.content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    height: 120px;
+}
+
+.content:hover{
+    transform: scale(1.1);
+}
+
+.forExample{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px; width: 90%;
+    height: 400px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 12px 35px rgb(0, 0, 0, 0.5)
+}
+
+.forExample:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgb(0, 0, 0, 0.5)
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+p:hover{
+    transform: translateY(-10px) scale(1.2);
+}
+
+.NurzhanPC{
+    text-align: center;
+    margin-bottom: 5em;
+    font-size: 30px;
+    margin: 60px;
+    color: white;
+    cursor: default;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+}
+
+.information{
+    transition: transform 0.3 ease;
+}
+
+.information:hover{
+   transform: scale(1.1);
+}
+
+body.light {
+  background: linear-gradient(to bottom, #f1f1f1 90%, #ddd 10%);
+  color: #222;
+}
+
+body.light .forExample {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #222;
+}
+
+body.light .header {
+  background-color: #ddd;
+  color: #222;
+}
+
+body.light .information {
+  color: #222;
+}
+
+body.light .content {
+  color: #222;
+}
+
+body.light .NurzhanPC {
+  color: #222;
+}
+
+.btn{
+  color: #ddd;
+  background-color: #222;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  border-radius: 5px; 
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: end;
+}
+
+body, .forExample, .header, .NurzhanPC {
+  transition: all 0.3s ease color 0.3 ease; 
+}
+
+body.light #themeToggle {
+  background: #eee;
+  color: #111;
+}
+
+@media (max-width: 600px) {
+    .forExample {
+        width: 100%;
+    }
+}
